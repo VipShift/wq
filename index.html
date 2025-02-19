@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Современный Лендинг</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: white;
+            text-align: left;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header-image {
+            width: 100%;
+            max-width: 350px;
+            display: block;
+            margin: 20px auto 5px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+        }
+        .parallax {
+            height: 20vh;
+            background: url('https://source.unsplash.com/1600x900/?technology,neon') no-repeat center;
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-shadow: 0 0 10px #ff00ff;
+            width: 80%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .content {
+            padding: 20px;
+            font-size: 1.4rem;
+            max-width: 500px;
+            background: rgba(255, 0, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ff66ff;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 15px auto;
+            font-size: 1rem;
+            color: white;
+            background: linear-gradient(45deg, #ff00ff, #ff66ff);
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ff00ff;
+            transition: 0.3s;
+            display: block;
+            text-align: center;
+        }
+        .btn:hover {
+            box-shadow: 0 0 20px #ff66ff;
+            transform: scale(1.05);
+        }
+        .info-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            margin: 15px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ff00ff;
+            font-size: 1.1rem;
+            max-width: 450px;
+            text-align: left;
+        }
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+        ul li::before {
+            content: '✔ ';
+            color: #ff66ff;
+        }
+        @media (max-width: 768px) {
+            .parallax {
+                font-size: 1.5rem;
+                height: 15vh;
+            }
+            .content {
+                font-size: 1.1rem;
+            }
+            .btn {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="photo_2025-02-10_00-00-45.jpg" alt="Фото" class="header-image">
+    <div class="parallax">Привет! Добро пожаловать</div>
+    <div class="content">
+        <p>Привет! 🌍✨</p>
+        <div class="info-box">Меня зовут Настя, мне 21 год. Уже два с половиной года я живу в Германии 🇩🇪, но сама я родом из Украины . Вместе с мужем мы прошли множество этапов, которые часто стоят на пути переезда, адаптации и бюрократии 📝.</div>
+        <div class="info-box">
+            <p>За это время я успела разобраться, как:</p>
+            <ul>
+                <li>Оформить доверенности 📄</li>
+                <li>Сменить фамилию после замужества 💍</li>
+                <li>Расписаться в Грузии </li>
+                <li>И многое другое, что поможет сделать вашу жизнь за границей проще и комфортнее.</li>
+            </ul>
+        </div>
+        <p>В моём Telegram-канале я делюсь полезными лайфхаками ✨, реальными историями и опытом, который может сэкономить вам время и нервы 🕒.</p>
+        <p>Давайте вместе разбираться, что лучше ✅, что проще 🔑 и как справляться с любыми вызовами за границей 🌏.</p>
+        <p>Присоединяйтесь, задавайте вопросы, и давайте сделаем эту сложную дорогу чуть легче! 💡💛</p>
+        <a href="https://t.me/NestyaWey" class="btn">Перейти в Telegram-канал</a>
+        <a href="https://t.me/NatyaSV" class="btn">Связаться лично</a>
+    </div>
+</body>
+</html>
+
